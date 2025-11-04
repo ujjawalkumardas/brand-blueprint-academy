@@ -38,7 +38,12 @@ const Index = () => {
             A Hindi course that helps you design brand systems for yourself or your clients
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
-            <Button variant="hero" size="lg" className="text-lg px-10" onClick={scrollToPrice}>
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-10" 
+              onClick={() => window.open('https://superprofile.bio/course/e9a3238d-6a8b-4ded-924f-a2860b24a121', '_blank')}
+            >
               Enroll Now for ₹5000
             </Button>
           </div>
@@ -231,7 +236,12 @@ const Index = () => {
                   ))}
                 </div>
                 
-                <Button variant="hero" size="lg" className="w-full text-lg">
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full text-lg"
+                  onClick={() => window.open('https://superprofile.bio/course/e9a3238d-6a8b-4ded-924f-a2860b24a121', '_blank')}
+                >
                   Enroll Now for ₹5,000
                 </Button>
               </CardContent>
