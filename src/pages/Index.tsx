@@ -17,12 +17,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url(${heroBg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
       >
         <div className="container mx-auto px-4 py-20 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
