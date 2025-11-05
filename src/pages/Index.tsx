@@ -348,7 +348,7 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="container mx-auto px-4 py-20" style={{
+      <section id="faq" className="container mx-auto px-4 py-20" style={{
       backgroundColor: '#1E1E1E'
     }}>
         <div className="text-center mb-12">
@@ -510,7 +510,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-primary transition-colors">About the Course</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Instructor</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">FAQ</a></li>
+                <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
               </ul>
             </div>
 
