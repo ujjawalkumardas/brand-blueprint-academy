@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BookOpen, Palette, Target, Star, Play, CheckCircle2, Users, Award, TrendingUp } from "lucide-react";
 const Index = () => {
   const handleEnroll = () => {
@@ -364,6 +365,137 @@ const Index = () => {
               </Button>
             </CardFooter>
           </Card>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">💡 Frequently Asked Questions</h2>
+          <p className="text-muted-foreground">
+            Everything you need to know about the course
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                What will I learn in this course?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                You'll learn how to create a complete brand guideline from scratch — the same process professionals use to earn money by offering brand guideline services to clients.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Who is this course for?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                This course is designed for video editors and creative professionals who want to integrate design thinking into their editing process. It's not for complete beginners — basic editing knowledge is recommended.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Do I need to know editing before joining?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes, just the basics. If you're familiar with tools like Premiere Pro or After Effects, you're ready to start.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                What makes this course different from other editing courses?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Most courses only focus on how to edit videos. This course teaches you what to learn before editing — the design foundation that helps you make structured, visually consistent, and high-quality content.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Will I get lifetime access?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes, you'll have lifetime access to all course materials after purchase.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Is the course live or recorded?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                The course is completely pre-recorded, so you can learn at your own pace.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                How will this course help me get clients?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                You'll be able to create brand guidelines for your clients — helping them define their visual identity and stand out online.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Can I use this knowledge for my own brand too?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Absolutely. You can apply the same techniques to build consistent and professional branding for your own content.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-9" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                What if I don't have clients right now?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                That's perfectly fine. You can use this time to master the tools and process, so when clients come — you're fully ready.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-10" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Will I get any templates or resources?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes, you'll receive the same Brand Guideline template that I use in the course — ready to customize for your own projects or clients.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-11" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                How much can I charge clients after learning this skill?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                You can start charging anywhere between ₹4,000 to ₹12,000 per brand guideline, depending on the project and client size.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-12" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                Will I get a certificate after completing the course?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes, you'll receive a completion certificate after finishing the course.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-13" className="bg-card/30 border border-border rounded-lg px-6">
+              <AccordionTrigger className="text-left hover:no-underline">
+                How can I contact support?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                If you face any payment or access issues, you can reach out via email at ujjawal.helpsuppport@gmail.com
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
