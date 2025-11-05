@@ -239,7 +239,9 @@ const Index = () => {
               </div>
               <p className="text-muted-foreground">"Honestly, course itna structured aur easy-to-follow hai ki har concept clear ho gaya. Mujhe pehli baar laga ki main apne content ke liye proper brand identity bana sakti hoon. Highly recommend for anyone serious about growing as a creator!"</p>
               <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
+                {[...Array(4)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
+                <Star className="w-5 h-5 fill-primary text-primary" style={{ clipPath: 'inset(0 50% 0 0)' }} />
+                <Star className="w-5 h-5 text-primary" />
               </div>
             </CardContent>
           </Card>
