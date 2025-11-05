@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BookOpen, Palette, Target, Star, Play, CheckCircle2, Users, Award, TrendingUp, Twitter, Instagram, Youtube } from "lucide-react";
+import courseThumbnail from "@/assets/course-thumbnail.png";
 const Index = () => {
   const handleEnroll = () => {
     window.open("https://superprofile.bio/course/e9a3238d-6a8b-4ded-924f-a2860b24a121", "_blank");
@@ -142,8 +143,9 @@ const Index = () => {
 
         <div className="max-w-4xl mx-auto">
           <Card className="bg-gradient-card border-border shadow-glow overflow-hidden">
-            <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 relative">
-              <div className="absolute inset-0 flex items-center justify-center">
+            <div className="aspect-video relative overflow-hidden">
+              <img src={courseThumbnail} alt="Brand Guideline Course Thumbnail" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                 <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center">
                   <Play className="w-10 h-10 text-primary-foreground ml-1" />
                 </div>
