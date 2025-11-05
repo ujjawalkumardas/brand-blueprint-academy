@@ -32,7 +32,7 @@ const Index = () => {
             <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
               Limited Time Offer
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
               Master the Art of Creating{" "}
               <span className="text-primary">Brand Guidelines</span>
             </h1>
@@ -56,8 +56,8 @@ const Index = () => {
                   <Users className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">Only 50 Spots</div>
-                  <div className="text-sm text-muted-foreground">Enroll Faster</div>
+                  <div className="text-3xl font-bold">50 Spots Left</div>
+                  <div className="text-sm text-muted-foreground">Enroll Before It’s Full</div>
                 </div>
               </CardContent>
             </Card>
@@ -90,7 +90,7 @@ const Index = () => {
       {/* Features Section */}
       <section id="features" className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Learn from more than 150 career universities</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Build Professional Brand Guidelines from Scratch—Step by Step</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="bg-gradient-card border-border shadow-card hover:shadow-glow transition-all duration-300">
@@ -196,24 +196,7 @@ const Index = () => {
       </section>
 
       {/* Promo Video Section */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Watch What You'll Learn</h2>
-          <p className="text-muted-foreground">
-            Get a preview of the course content and teaching style
-          </p>
-        </div>
-
-        <div className="max-w-4xl mx-auto">
-          <div className="relative aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 shadow-glow-lg">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button onClick={handleEnroll} className="w-24 h-24 rounded-full bg-primary hover:bg-primary/90 flex items-center justify-center transition-all hover:scale-110 shadow-glow-lg">
-                <Play className="w-12 h-12 text-primary-foreground ml-2" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Testimonials Section */}
       <section id="testimonials" className="container mx-auto px-4 py-20">
@@ -236,9 +219,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground">Video Editor</p>
                 </div>
               </div>
-              <p className="text-muted-foreground">
-                "इस कोर्स ने मेरी ब्रांड गाइडलाइन बनाने की समझ को पूरी तरह बदल दिया। अब मैं अपने clients के लिए professional documents बना पाता हूं। Hindi में होने से समझना बहुत आसान था!"
-              </p>
+              <p className="text-muted-foreground">"Pehle mujhe lagta tha brand guideline sirf bade brands ke liye hoti hai, lekin is course ne pura perspective change kar diya. Ab main apne clients ke liye proper brand documents bana pata hoon — aur sab kuch step-by-step samjhaaya gaya tha. Totally worth it!"</p>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
               </div>
@@ -256,9 +237,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground">Content Creator</p>
                 </div>
               </div>
-              <p className="text-muted-foreground">
-                "Bahut hi detailed aur practical course hai. Step-by-step explanation से har concept clear ho gaya. Ab main confidently apne brand ka complete identity system design kar sakti hoon. Highly recommended!"
-              </p>
+              <p className="text-muted-foreground">"Honestly, course itna structured aur easy-to-follow hai ki har concept clear ho gaya. Mujhe pehli baar laga ki main apne content ke liye proper brand identity bana sakti hoon. Highly recommend for anyone serious about growing as a creator!"</p>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
               </div>
@@ -276,9 +255,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground">Freelance Designer</p>
                 </div>
               </div>
-              <p className="text-muted-foreground">
-                "As a freelancer, this course helped me charge premium rates for brand guideline projects. The templates and framework are incredibly valuable. Worth every rupee!"
-              </p>
+              <p className="text-muted-foreground">"As a freelancer, mujhe pehle brand guideline projects ke liye client convince karna mushkil lagta tha. Ab main confidently premium charge karta hoon because I actually know how to deliver professional results. Templates and examples are gold!"</p>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
               </div>
@@ -296,9 +273,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground">Social Media Manager</p>
                 </div>
               </div>
-              <p className="text-muted-foreground">
-                "Perfect course for anyone working with multiple clients. The real-world examples made everything so clear. Now I create brand guidelines that my clients love!"
-              </p>
+              <p className="text-muted-foreground">"Is course ne meri approach hi badal di. Pehle sirf posts banati thi, ab brand ke look aur feel ke hisaab se strategy banati hoon. Real-world examples ne sab kuch simple bana diya. My clients love the work now!"</p>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
               </div>
@@ -335,7 +310,7 @@ const Index = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>40+ Video Lessons in Hindi</span>
+                  <span>Video Lessons in Hindi</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
@@ -369,7 +344,9 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="container mx-auto px-4 py-20" style={{ backgroundColor: '#1E1E1E' }}>
+      <section className="container mx-auto px-4 py-20" style={{
+      backgroundColor: '#1E1E1E'
+    }}>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">💡 Frequently Asked Questions</h2>
           <p className="text-muted-foreground">
