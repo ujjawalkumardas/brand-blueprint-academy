@@ -369,7 +369,7 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-20" style={{ backgroundColor: '#1E1E1E' }}>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">💡 Frequently Asked Questions</h2>
           <p className="text-muted-foreground">
