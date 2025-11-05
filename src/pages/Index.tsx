@@ -279,7 +279,7 @@ const Index = () => {
               </div>
               <p className="text-muted-foreground">"Is course ne meri approach hi badal di. Pehle sirf posts banati thi, ab brand ke look aur feel ke hisaab se strategy banati hoon. Real-world examples ne sab kuch simple bana diya. My clients love the work now!"</p>
               <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
+                {[...Array(4)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
               </div>
             </CardContent>
           </Card>
