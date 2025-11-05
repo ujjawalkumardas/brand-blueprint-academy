@@ -517,8 +517,8 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Email: support@brandcourse.com</li>
-                <li>Phone: +91 98765 43210</li>
+                <li>Email: ujjawal.helpsuppport@gmail.com</li>
+                <li>Phone: +91 91031 87500</li>
               </ul>
             </div>
           </div>
