@@ -3,19 +3,17 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BookOpen, Palette, Target, Star, Play, CheckCircle2, Users, Award, TrendingUp, Twitter, Instagram, Youtube } from "lucide-react";
 import courseThumbnail from "@/assets/course-thumbnail.png";
+import logo from "@/assets/logo.png";
 const Index = () => {
   const handleEnroll = () => {
     window.open("https://superprofile.bio/course/e9a3238d-6a8b-4ded-924f-a2860b24a121", "_blank");
   };
   return <div className="min-h-screen bg-[#0F0F0F] text-foreground">
       {/* Navigation */}
-      <nav className="border-b border-border">
+      <nav className="sticky top-0 z-50 border-b border-border bg-[#0F0F0F]/95 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <BookOpen className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="font-bold text-lg">Brand Guidelines Course</span>
+            <img src={logo} alt="Ujjawal Kumar Das" className="h-10 w-auto" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
