@@ -297,7 +297,57 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="max-w-md mx-auto">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          {/* Regular Price Card - Left Column */}
+          <Card className="bg-card/30 border-border shadow-card opacity-75 relative">
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-muted/50 text-muted-foreground text-xs font-medium">
+              Available Later
+            </div>
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl mb-2 text-muted-foreground">Regular Price</CardTitle>
+              <CardDescription className="text-muted-foreground/70">Original Price (Before Launch Discount)</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="text-center space-y-2">
+                <div className="text-5xl font-bold text-muted-foreground line-through">₹7,999</div>
+                <div className="text-sm text-muted-foreground/70">After Offer Ends</div>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-muted-foreground/70">
+                  <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
+                  <span>Video Lessons in Hindi</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground/70">
+                  <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
+                  <span>Lifetime Course Access</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground/70">
+                  <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
+                  <span>Downloadable Templates & Resources</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground/70">
+                  <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
+                  <span>Real Client Project Examples</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground/70">
+                  <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
+                  <span>Certificate of Completion</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground/70">
+                  <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
+                  <span>Community Access</span>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button size="lg" variant="outline" className="w-full text-lg py-6" disabled>
+                Regular Price After Offer
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* Discounted Offer Card - Right Column */}
           <Card className="bg-gradient-card border-primary shadow-glow-lg">
             <CardHeader className="text-center">
               <div className="inline-block mx-auto px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
