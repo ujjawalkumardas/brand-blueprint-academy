@@ -17,8 +17,8 @@ const Index = () => {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
+            <a href="#curriculum" className="text-muted-foreground hover:text-foreground transition-colors">Curriculum</a>
             <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-            <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Reviews</a>
           </div>
           <Button variant="hero" onClick={handleEnroll}>Enroll Now</Button>
         </div>
@@ -152,10 +152,6 @@ const Index = () => {
             <CardHeader>
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-semibold text-primary">Hindi Course</span>
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-primary text-primary" />)}
-                  <span className="ml-2 text-sm text-muted-foreground">(4.9/5)</span>
-                </div>
               </div>
               <CardTitle className="text-2xl">How to Create Professional Brand Guidelines</CardTitle>
               <CardDescription className="text-base">
@@ -195,94 +191,256 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Promo Video Section */}
-      
-
-      {/* Testimonials Section */}
-      <section id="testimonials" className="container mx-auto px-4 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Students Say</h2>
-          <p className="text-muted-foreground">
-            Real feedback from our community of video editors and creators
+      {/* Course Curriculum Section */}
+      <section id="curriculum" className="container mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Course Curriculum</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            A complete step-by-step journey from understanding brand foundations to creating professional brand guidelines
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="bg-gradient-card border-border shadow-card">
-            <CardContent className="p-8 space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Users className="w-8 h-8 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-bold">Rahul Sharma</h4>
-                  <p className="text-sm text-muted-foreground">Video Editor</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">"Pehle mujhe lagta tha brand guideline sirf bade brands ke liye hoti hai, lekin is course ne pura perspective change kar diya. Ab main apne clients ke liye proper brand documents bana pata hoon — aur sab kuch step-by-step samjhaaya gaya tha. Totally worth it!"</p>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
-              </div>
-            </CardContent>
-          </Card>
+        <div className="max-w-4xl mx-auto relative">
+          {/* Timeline connector line */}
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block" />
 
-          <Card className="bg-gradient-card border-border shadow-card">
-            <CardContent className="p-8 space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Users className="w-8 h-8 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-bold">Priya Patel</h4>
-                  <p className="text-sm text-muted-foreground">Content Creator</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">"Honestly, course itna structured aur easy-to-follow hai ki har concept clear ho gaya. Mujhe pehli baar laga ki main apne content ke liye proper brand identity bana sakti hoon. Highly recommend for anyone serious about growing as a creator!"</p>
-              <div className="flex items-center gap-1">
-                {[...Array(4)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
-                <Star className="w-5 h-5 fill-primary text-primary" style={{
-                clipPath: 'inset(0 50% 0 0)'
-              }} />
-                
-              </div>
-            </CardContent>
-          </Card>
+          <div className="space-y-8">
+            {/* Chapter 01 */}
+            <div className="relative pl-0 md:pl-20">
+              <div className="absolute left-6 top-6 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 hidden md:block" />
+              <Card className="bg-gradient-to-br from-primary/5 to-transparent border-primary/20 shadow-card hover:shadow-glow transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold">Chapter 01 — Mood Board</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>What is a Mood Board?</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Why Every Editor Needs One</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Finding Inspiration</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Tools to Create Mood Boards (Figma / Canva)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Maintaining Visual Consistency</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
-          <Card className="bg-gradient-card border-border shadow-card">
-            <CardContent className="p-8 space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Users className="w-8 h-8 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-bold">Amit Kumar</h4>
-                  <p className="text-sm text-muted-foreground">Freelance Designer</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">"As a freelancer, mujhe pehle brand guideline projects ke liye client convince karna mushkil lagta tha. Ab main confidently premium charge karta hoon because I actually know how to deliver professional results. Templates and examples are gold!"</p>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
-              </div>
-            </CardContent>
-          </Card>
+            {/* Chapter 02 */}
+            <div className="relative pl-0 md:pl-20">
+              <div className="absolute left-6 top-6 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 hidden md:block" />
+              <Card className="bg-gradient-to-br from-primary/5 to-transparent border-primary/20 shadow-card hover:shadow-glow transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold">Chapter 02 — Color Selection</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Power of Colors in Branding</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Understanding Client Vision</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Using Coolors.co for Palette Creation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>The 5 Must-Use Tools in Coolors</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Building Emotion Through Color</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
-          <Card className="bg-gradient-card border-border shadow-card">
-            <CardContent className="p-8 space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Users className="w-8 h-8 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-bold">Sneha Reddy</h4>
-                  <p className="text-sm text-muted-foreground">Social Media Manager</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">"Is course ne meri approach hi badal di. Pehle sirf posts banati thi, ab brand ke look aur feel ke hisaab se strategy banati hoon. Real-world examples ne sab kuch simple bana diya. My clients love the work now!"</p>
-              <div className="flex items-center gap-1">
-                {[...Array(4)].map((_, i) => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
-              </div>
-            </CardContent>
-          </Card>
+            {/* Chapter 03 */}
+            <div className="relative pl-0 md:pl-20">
+              <div className="absolute left-6 top-6 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 hidden md:block" />
+              <Card className="bg-gradient-to-br from-primary/5 to-transparent border-primary/20 shadow-card hover:shadow-glow transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold">Chapter 03 — Font Selection</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Fonts as a Brand's Voice</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Understanding Font Types</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Choosing the Right Font Combination</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Top Resources to Explore Fonts</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Testing Font Pairings in Real Context</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Chapter 04 */}
+            <div className="relative pl-0 md:pl-20">
+              <div className="absolute left-6 top-6 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 hidden md:block" />
+              <Card className="bg-gradient-to-br from-primary/5 to-transparent border-primary/20 shadow-card hover:shadow-glow transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold">Chapter 04 — Assets Selection</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>What Are Brand Assets?</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>The 6 Essential Asset Categories</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Real Client Example: Finance Brand</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Asking the Right Questions to Clients</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Aligning Assets with Platform & Purpose</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Chapter 05 */}
+            <div className="relative pl-0 md:pl-20">
+              <div className="absolute left-6 top-6 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 hidden md:block" />
+              <Card className="bg-gradient-to-br from-primary/5 to-transparent border-primary/20 shadow-card hover:shadow-glow transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold">Chapter 05 — Applying Brand Guidelines in After Effects</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>My Own Brand Guideline Overview</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Setting Up the Project in After Effects</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Implementing Mood Board, Colors & Fonts</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Maintaining Consistency Across Scenes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Practical Walkthrough — My Content Example</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Key Takeaways for Professional Projects</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Chapter 06 */}
+            <div className="relative pl-0 md:pl-20">
+              <div className="absolute left-6 top-6 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 hidden md:block" />
+              <Card className="bg-gradient-to-br from-primary/5 to-transparent border-primary/20 shadow-card hover:shadow-glow transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold">Chapter 06 — Structuring Brand Guidelines in Figma</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Why Figma for Brand Guidelines</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Figma Interface Basics (Frames, Grids, Texts)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Organizing Sections — Mood, Color, Fonts, Assets</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Creating a Clean & Functional Layout</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Tips to Keep It Designer-Friendly</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Exporting & Sharing the Brand Guide</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Chapter 07 */}
+            <div className="relative pl-0 md:pl-20">
+              <div className="absolute left-6 top-6 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 hidden md:block" />
+              <Card className="bg-gradient-to-br from-primary/5 to-transparent border-primary/20 shadow-card hover:shadow-glow transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold">Chapter 07 — Structuring Brand Guidelines in Canva + Real Client Examples</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Why Canva Works for Editors & Creators</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Building a Brand Guideline Step-by-Step</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Maintaining Alignment & Visual Harmony</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Adding Interactive Elements for Clients</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>My 3 Real Client Brand Guideline Examples</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Final Wrap-Up & Learnings</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -550,8 +708,8 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
+                <li><a href="#curriculum" className="hover:text-primary transition-colors">Curriculum</a></li>
                 <li><a href="#pricing" className="hover:text-primary transition-colors">Pricing</a></li>
-                <li><a href="#testimonials" className="hover:text-primary transition-colors">Reviews</a></li>
               </ul>
             </div>
 
