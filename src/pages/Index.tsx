@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { BookOpen, Palette, Target, Star, Play, CheckCircle2, Users, Award, TrendingUp, Twitter, Instagram, Youtube } from "lucide-react";
 import courseThumbnail from "@/assets/course-thumbnail.png";
 import logo from "@/assets/logo.png";
+import { CountdownBanner } from "@/components/CountdownBanner";
 const Index = () => {
   const handleEnroll = () => {
     window.open("https://superprofile.bio/course/e9a3238d-6a8b-4ded-924f-a2860b24a121", "_blank");
@@ -190,6 +191,9 @@ const Index = () => {
           </Card>
         </div>
       </section>
+
+      {/* Countdown Offer Banner */}
+      <CountdownBanner />
 
       {/* Course Curriculum Section */}
       <section id="curriculum" className="container mx-auto px-4 py-20">
