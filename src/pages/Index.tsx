@@ -206,7 +206,7 @@ const Index = () => {
 
         <div className="max-w-4xl mx-auto relative">
           {/* Timeline connector line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-primary to-transparent hidden md:block" />
 
           <div className="space-y-8">
             {/* Chapter 01 */}
