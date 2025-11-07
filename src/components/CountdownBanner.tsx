@@ -34,30 +34,34 @@ export const CountdownBanner = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const formatTime = (num: number) => String(num).padStart(2, '0');
+  
+  const totalHours = timeLeft.days * 24 + timeLeft.hours;
+
   return (
-    <div className="w-full bg-gradient-to-r from-[hsl(10,85%,58%)] via-[hsl(25,90%,60%)] to-[hsl(35,90%,62%)] py-4 shadow-lg">
+    <div className="w-full bg-gradient-to-r from-primary via-accent to-primary py-3 shadow-glow">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-white">
+        <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-primary-foreground">
           <div className="flex items-center gap-2 font-bold text-sm md:text-base">
-            <span>⚠️</span>
-            <span>ONLY 50 SEATS LEFT!</span>
+            <span>🔥</span>
+            <span>Limited to 50 Seats Only!</span>
           </div>
           
-          <span className="hidden md:inline text-white/60">•</span>
+          <span className="hidden md:inline opacity-60">•</span>
           
           <div className="flex items-center gap-2 font-bold text-sm md:text-base">
-            <span>💸</span>
-            <span>Early Pricing — Price increases once the offer ends!</span>
+            <span>💰</span>
+            <span>Secure Your Early Access Now</span>
           </div>
           
-          <span className="hidden md:inline text-white/60">•</span>
+          <span className="hidden md:inline opacity-60">•</span>
           
           <div className="flex items-center gap-2 font-bold text-sm md:text-base">
-            <span>⏳</span>
-            <span>Offer ends in:</span>
-            <div className="bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-lg animate-pulse">
-              <span className="font-mono font-bold">
-                {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
+            <span>⏰</span>
+            <span>Deal Expires In:</span>
+            <div className="bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-lg">
+              <span className="font-mono font-bold tracking-wider">
+                {formatTime(totalHours)}:{formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
               </span>
             </div>
           </div>
