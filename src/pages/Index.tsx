@@ -173,10 +173,6 @@ const Index = () => {
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                   <span>Downloadable Resources</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary" />
-                  <span>Certificate of Completion</span>
-                </div>
               </div>
             </CardContent>
             <CardFooter className="flex items-center justify-between">
@@ -492,10 +488,6 @@ const Index = () => {
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground/70">
                   <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
-                  <span>Certificate of Completion</span>
-                </div>
-                <div className="flex items-center gap-3 text-muted-foreground/70">
-                  <CheckCircle2 className="w-5 h-5 text-muted-foreground/50 flex-shrink-0" />
                   <span>Community Access</span>
                 </div>
               </div>
@@ -539,10 +531,6 @@ const Index = () => {
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                   <span>Real Client Project Examples</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Certificate of Completion</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
@@ -672,15 +660,6 @@ const Index = () => {
             </AccordionItem>
 
             <AccordionItem value="item-12" className="bg-card/30 border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left hover:no-underline">
-                Will I get a certificate after completing the course?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Yes, you'll receive a completion certificate after finishing the course.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-13" className="bg-card/30 border border-border rounded-lg px-6">
               <AccordionTrigger className="text-left hover:no-underline">
                 How can I contact support?
               </AccordionTrigger>
