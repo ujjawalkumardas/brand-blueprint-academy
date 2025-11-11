@@ -173,6 +173,14 @@ const Index = () => {
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                   <span>Downloadable Resources</span>
                 </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                  <span>Real Client Project Examples</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                  <span>Community Access</span>
+                </div>
               </div>
             </CardContent>
             <CardFooter className="flex items-center justify-between">
