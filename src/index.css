@@ -17,38 +17,38 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 155 25% 35%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 35 60% 65%;
+    --primary-foreground: 0 0% 10%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 40 40% 70%;
+    --secondary-foreground: 0 0% 10%;
 
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 30 80% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 40 40% 70%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 20%;
     --input: 0 0% 18%;
-    --ring: 155 25% 35%;
+    --ring: 35 60% 65%;
 
     --radius: 0.75rem;
 
     /* Custom tokens for brand */
-    --brand-accent: 155 25% 35%;
-    --brand-glow: 155 25% 45%;
+    --brand-accent: 35 60% 65%;
+    --brand-glow: 40 40% 70%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(155 25% 35%), hsl(155 25% 45%));
+    --gradient-primary: linear-gradient(135deg, hsl(35 60% 65%), hsl(40 40% 70%));
     --gradient-card: linear-gradient(180deg, hsl(0 0% 10%), hsl(0 0% 7%));
     
     /* Shadows */
-    --shadow-glow: 0 0 30px hsl(155 25% 35% / 0.3);
-    --shadow-glow-lg: 0 0 50px hsl(155 25% 35% / 0.4);
+    --shadow-glow: 0 0 30px hsl(35 60% 65% / 0.3);
+    --shadow-glow-lg: 0 0 50px hsl(35 60% 65% / 0.4);
     --shadow-card: 0 10px 30px hsl(0 0% 0% / 0.5);
     
     /* Animations */
