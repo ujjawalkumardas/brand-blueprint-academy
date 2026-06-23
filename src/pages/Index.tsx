@@ -1,33 +1,45 @@
+import { useEffect, useRef } from "react";
 import bgAsset from "@/assets/firefly-me.png.asset.json";
 
 const Index = () => {
+  const cursorRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    if (!cursor) return;
+    const move = (e: MouseEvent) => {
+      cursor.style.transform = `translate(${e.clientX - 12}px, ${e.clientY - 12}px)`;
+    };
+    window.addEventListener("mousemove", move);
+    document.body.style.cursor = "none";
+    return () => {
+      window.removeEventListener("mousemove", move);
+      document.body.style.cursor = "";
+    };
+  }, []);
+
   return (
     <div
-      className="min-h-screen w-full bg-no-repeat bg-center bg-cover"
+      className="min-h-screen w-full bg-no-repeat bg-center bg-cover relative cursor-none"
       style={{ backgroundImage: `url(${bgAsset.url})` }}
     >
-      <div className="flex flex-col items-center pt-12 md:pt-16 px-4">
-        <h1
-          className="text-6xl md:text-8xl font-serif tracking-tight text-black"
-          style={{ fontFamily: '"Playfair Display", Georgia, serif' }}
-        >
-          UJJAWAL
-        </h1>
-        <div className="mt-5 flex gap-4">
-          <a
-            href="#portfolio"
-            className="w-1/4 min-w-fit px-5 py-2 rounded-full border border-black text-black text-sm md:text-base hover:bg-black hover:text-white transition-colors text-center"
-          >
-            Portfolio
-          </a>
-          <a
-            href="#contact"
-            className="w-1/4 min-w-fit px-5 py-2 rounded-full border border-black text-black text-sm md:text-base hover:bg-black hover:text-white transition-colors text-center"
-          >
-            Contact Here
-          </a>
-        </div>
-      </div>
+      <div
+        ref={cursorRef}
+        className="pointer-events-none fixed top-0 left-0 w-6 h-6 rounded-full bg-white z-50"
+        style={{ mixBlendMode: "difference" }}
+      />
+      <a
+        href="#contact"
+        className="absolute left-[10%] top-1/2 -translate-y-1/2 px-8 py-3 rounded-full border border-black text-black text-sm md:text-base bg-transparent hover:bg-black hover:text-white transition-colors"
+      >
+        Contact Me
+      </a>
+      <a
+        href="#portfolio"
+        className="absolute right-[10%] top-1/2 -translate-y-1/2 px-8 py-3 rounded-full border border-black text-black text-sm md:text-base bg-transparent hover:bg-black hover:text-white transition-colors"
+      >
+        Portfolio
+      </a>
     </div>
   );
 };
