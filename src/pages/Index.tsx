@@ -30,13 +30,15 @@ const Index = () => {
       />
       <a
         href="#contact"
-        className="absolute left-[10%] top-1/2 -translate-y-1/2 px-8 py-3 rounded-full border border-black text-black text-sm md:text-base bg-transparent hover:bg-black hover:text-white transition-colors"
+        className="absolute left-[10%] top-1/2 -translate-y-1/2 px-5 py-2 rounded-full border border-black text-black text-xs md:text-sm bg-transparent hover:bg-black hover:text-white transition-colors"
       >
         Contact Me
       </a>
       <a
-        href="#portfolio"
-        className="absolute right-[10%] top-1/2 -translate-y-1/2 px-8 py-3 rounded-full border border-black text-black text-sm md:text-base bg-transparent hover:bg-black hover:text-white transition-colors"
+        href="https://in.pinterest.com/ujjawalkumardas/_created/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute right-[10%] top-1/2 -translate-y-1/2 px-5 py-2 rounded-full border border-black text-black text-xs md:text-sm bg-transparent hover:bg-black hover:text-white transition-colors"
       >
         Portfolio
       </a>
