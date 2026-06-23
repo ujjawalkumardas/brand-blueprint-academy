@@ -13,16 +13,16 @@ const Index = () => {
         >
           UJJAWAL
         </h1>
-        <div className="mt-5 flex gap-5">
+        <div className="mt-5 flex gap-4">
           <a
             href="#portfolio"
-            className="px-8 py-2.5 rounded-full border border-black text-black text-base md:text-lg hover:bg-black hover:text-white transition-colors"
+            className="w-1/4 min-w-fit px-5 py-2 rounded-full border border-black text-black text-sm md:text-base hover:bg-black hover:text-white transition-colors text-center"
           >
             Portfolio
           </a>
           <a
             href="#contact"
-            className="px-8 py-2.5 rounded-full border border-black text-black text-base md:text-lg hover:bg-black hover:text-white transition-colors"
+            className="w-1/4 min-w-fit px-5 py-2 rounded-full border border-black text-black text-sm md:text-base hover:bg-black hover:text-white transition-colors text-center"
           >
             Contact Here
           </a>
