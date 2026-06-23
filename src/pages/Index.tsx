@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import bgAsset from "@/assets/firefly-me.png.asset.json";
+import bgAsset from "@/assets/ujjawal-bg.jpg.asset.json";
 
 const Index = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
