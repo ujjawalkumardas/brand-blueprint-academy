@@ -37,60 +37,76 @@ const Index = () => {
       />
 
       {/* HERO */}
-      <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
-        {/* Giant Creator text */}
-        <h1
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-black select-none whitespace-nowrap pointer-events-none"
-          style={{
-            fontSize: "clamp(100px, 20vw, 260px)",
-            color: "#E8E8E8",
-            zIndex: 0,
-            letterSpacing: "-0.04em",
-            lineHeight: 1,
-          }}
-        >
-          Creator
-        </h1>
+      <section className="relative w-full h-screen overflow-hidden" style={{ background: "#D9D9D4" }}>
+        {/* Top nav */}
+        <nav className="absolute top-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1 bg-white/40 backdrop-blur-md rounded-full px-2 py-1.5 border border-white/60">
+          {["Welcome", "Genesis", "Portfolio", "Blog", "Press"].map((item) => (
+            <a key={item} href="#" className="px-3 py-1.5 text-[11px] text-neutral-700 hover:text-black rounded-full transition-colors">
+              {item}
+            </a>
+          ))}
+          <a href="#contact" className="ml-1 px-3 py-1.5 text-[11px] bg-black text-white rounded-full hover:bg-neutral-800 transition-colors">
+            Get Started
+          </a>
+        </nav>
 
-        {/* Silhouette */}
+        {/* Headline top-left */}
+        <div className="absolute top-28 md:top-32 left-6 md:left-16 z-10 max-w-xl">
+          <h1
+            className="font-light text-white leading-[1.05] tracking-tight"
+            style={{ fontSize: "clamp(32px, 4.5vw, 56px)" }}
+          >
+            Every project<br />
+            begins at zero. I build<br />
+            exactly what matters—<br />
+            nothing more.
+          </h1>
+        </div>
+
+        {/* Silhouette centered */}
         <img
           src={bgAsset.url}
-          alt="Portrait silhouette"
-          className="absolute left-1/2 bottom-0 -translate-x-1/2 h-[85%] object-contain pointer-events-none"
-          style={{ zIndex: 1 }}
+          alt="Portrait"
+          className="absolute left-1/2 bottom-0 -translate-x-1/2 h-[90%] object-contain pointer-events-none z-[2]"
         />
 
-        {/* Small black cursor-marker dot */}
-        <span
-          className="absolute rounded-full"
-          style={{ width: 8, height: 8, background: "#0A0A0A", left: "calc(50% - 80px)", top: "55%", zIndex: 2 }}
-        />
-
-        {/* Buttons */}
-        <a
-          href="#contact"
-          className="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 px-5 py-2 rounded-full border border-black/80 text-xs md:text-sm bg-transparent hover:bg-black hover:text-white transition-colors z-10"
+        {/* Giant background word */}
+        <h2
+          className="absolute left-1/2 -translate-x-1/2 bottom-[8%] font-black select-none whitespace-nowrap pointer-events-none z-[1]"
+          style={{
+            fontSize: "clamp(120px, 22vw, 320px)",
+            color: "#FFFFFF",
+            letterSpacing: "-0.04em",
+            lineHeight: 1,
+            opacity: 0.95,
+          }}
         >
-          Contact Me
-        </a>
-        <a
-          href="https://in.pinterest.com/ujjawalkumardas/_created/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute right-6 md:right-12 top-1/2 -translate-y-1/2 px-5 py-2 rounded-full border border-black/80 text-xs md:text-sm bg-transparent hover:bg-black hover:text-white transition-colors z-10"
-        >
-          Portfolio
-        </a>
+          UJJAWAL
+        </h2>
 
-        {/* Bio chat card */}
+        {/* Bio chat card bottom-right */}
         <div
-          className="absolute bottom-10 right-6 md:right-12 max-w-xs bg-white rounded-2xl p-4 flex gap-3 items-start z-10"
-          style={{ boxShadow: "0 10px 30px rgba(0,0,0,0.08)" }}
+          className="absolute bottom-8 right-6 md:right-12 z-20 flex items-center gap-3 bg-white rounded-2xl p-2.5 pr-4"
+          style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.15)" }}
         >
-          <div className="w-10 h-10 rounded-md shrink-0" style={{ background: ACCENT }} />
-          <p className="text-xs leading-relaxed text-neutral-800">
-            <span className="font-medium">Hey, I'm Alex.</span> I believe great visuals don't happen by accident — they're made. And that's exactly what I do.
-          </p>
+          <div
+            className="w-12 h-12 rounded-xl shrink-0 flex items-center justify-center"
+            style={{ background: ACCENT }}
+          >
+            <span className="block w-5 h-5 bg-white/90 rounded-sm" />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-[13px] font-medium text-neutral-900 leading-tight">Design in</span>
+            <span className="text-[13px] font-medium text-neutral-900 leading-tight">evolution</span>
+          </div>
+          <div className="flex items-center gap-1 ml-2">
+            <button className="w-7 h-7 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700 hover:bg-neutral-100 transition-colors" aria-label="Previous">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="15 18 9 12 15 6" /></svg>
+            </button>
+            <button className="w-7 h-7 rounded-full bg-black text-white flex items-center justify-center hover:bg-neutral-800 transition-colors" aria-label="Next">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="9 18 15 12 9 6" /></svg>
+            </button>
+          </div>
         </div>
       </section>
 
